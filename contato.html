@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+			<meta charset="utf-8">
+			<title>Gamer Store</title>
+			<meta name="author" content="Marques Herminio">
+			<meta name="keywords" content="acessórios gamers, produtos baratos, teclado gamer barato, cadeira gamer barato, produtos games mais baratos do brasil">
+			<meta name="description" content="Game Store é uma loja dedicada para produtos gamers com o custo benefícios mais barato do Brasil. ">
+			<link rel="stylesheet" type="text/css" href="estilo.css">
+	</head>
+<body>
+	<header>
+		<img src="img/banner.png" alt="banner da loja Gamer Store com nuvens ao fundo, fundo preto">
+	</header>
+	<nav>
+			<a class="a-menu"href="index.html" >HOME</a>
+		    <a class="a-menu"href="index.html#pag-beneficios" >BENEFICIOS</a>
+			<a class="a-menu"href="index.html#pag-produtos" >PRODUTOS</a>
+			<a class="a-menu"href="index.html#pag-sobre" >SOBRE</a>
+			<a class="a-menu"href="#">CONTATO</a>
+	</nav>
+	
+	<section id="pag-contato">
+		<h1>Contato</h1>
+	
+	
+			<p>Entre em contato conosco para eventuais dúvidas ou caso queria fazer algum orçamento.</p>
+
+			<form name="" method="" action="">
+				<label for="nome">Nome:</label>
+				<input type="text" name="nome" value="" id="nome" size="50" placeholder="Nome Completo" required autofocus />
+
+				<label for="email">E-mail:</label>
+				<input id="email" type="email" name="email" placeholder="nomeusuario@email.com" />
+
+				<label for="senha">Senha:</label>
+				<input id="senha" type="password" name="senha" placeholder="Somente números" />
+
+				<label for="celular">Celular</label>
+				<input id="tel" type="tel" name="celular" placeholder="(99)99999-9999" pattern="^\(?\d{2}\)\d{5}[-\s]\d{4}.*?$" />
+
+				<div id="data-hora-orc">
+					<div>
+						<label for="data">Data:</label>
+						<input id="data" type="date" name="" />
+					</div>	
+					<div>
+						<label for="time">Hora:</label>
+						<input id="hora" type="time" name="" />
+					</div>
+					<div>
+						<label for="data">Orçamento:</label>
+						<input id="orcamento" type="number" name="" min="0.01" max="1000000" step="1"  />
+					</div>
+				</div>
+				<label for="nivel">Nível de Jogatina</label>
+				<select id="nivel" name="nivel">
+					<option value="">Selecione</option>
+					<option value="gamerIniciante">Gamer Iniciante</option>
+					<option value="gamerBasico">Gamer Básico</option>
+					<option value="gamerIntermediario">Gamer Intermediário</option>
+					<option value="gamerAvancado">Gamer Avançado</option>
+				</select>
+
+				<fieldset>
+					<legend>Gênero</legend>
+					<input id="Masc" type="radio" name="genero" value="Masc" /> <label for="Masc">Masculino</label><br/>
+					<input id="Fem" type="radio" name="genero" value="Fem" /> <label for="Fem">Feminio</label>
+				</fieldset>
+
+				<fieldset>
+					<legend>Atividades</legend>
+					<input id="basc" type="checkbox" name="atividade" value="basico" /> <label for="basc">Uso básico</label><br/>
+					<input id="inter" type="checkbox" name="atividade" value="jogosIntermediario" /> <label for="inter"> Jogos intermediário</label><br/>
+					<input id="avan" type="checkbox" name="atividade" value="jogosAvancados" /> <label for="avan">Jogos avançados </label><br/>
+					<input id="stream" type="checkbox" name="atividade" value="streaming" /> <label for="stream">Streaming</label><br/>
+				</fieldset>
+
+
+				<label for="msg">Mensagem:</label><br/>
+				<textarea id="msg" cols="52" rows="5"></textarea>
+				<div id="buttom-form">
+				<input type="submit" name="bnt-enviar" value="ENVIAR" />
+				<input type="reset" name="btn-cancelar" value="CANCELAR"/>
+				</div>
+			</form>
+		</section>	
+		<footer>
+			<p>Desenvolvido por <a class="instagram-link" href="http://instagram.com/marques.herminio" target="_blank" >Marques Herminio<a> - 2023</p>
+		</footer>
+</body>
+</html>
